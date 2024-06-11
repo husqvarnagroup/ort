@@ -1,0 +1,1 @@
+../../.././package-managers/conan/src/funTest/assets/projects/synthetic/conan-py/conanfile.py

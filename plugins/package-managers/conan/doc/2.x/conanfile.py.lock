@@ -1,0 +1,18 @@
+{
+    "version": "0.5",
+    "requires": [
+        "zstd/1.5.5#1f239731dc45147c7fc2f54bfbde73df%1715599909.17",
+        "zlib/1.2.13#4e74ebf1361fe6fb60326f473f276eb5%1705999194.457",
+        "sqlite3/3.45.0#3a7911478ffd14e7acc694ac113449b6%1707810434.986",
+        "pcre2/10.42#576680686b88a4dadf6d382d6d6351d9%1719089281.966",
+        "openssl/3.3.1#279e86dc2a7dded8c1fe8512e775bdb1%1721924369.561",
+        "lz4/1.9.4#652b313a0444c8b1d60d1bf9e95fb0a1%1721807480.477",
+        "libpq/15.4#a3354d556287c3d091c9f4d578b66ec8%1722260494.441",
+        "libmysqlclient/8.1.0#ecca1993f7ce32371ef5436f3639074a%1704273465.815",
+        "expat/2.6.2#2d385d0d50eb5561006a7ff9e356656b%1710428668.414",
+        "bzip2/1.0.8#457c272f7da34cb9c67456dd217d36c4%1703591832.799"
+    ],
+    "build_requires": [],
+    "python_requires": [],
+    "config_requires": []
+}
