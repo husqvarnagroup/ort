@@ -1,0 +1,511 @@
+---
+project:
+  id: "Conan2::conanfile.txt:"
+  definition_file_path: "plugins/package-managers/conan/src/funTest/assets/projects/synthetic/conan-txt/conanfile.txt"
+  declared_licenses: []
+  declared_licenses_processed: {}
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: "Git"
+    url: "<REPLACE_URL_PROCESSED>"
+    revision: "<REPLACE_REVISION>"
+    path: "<REPLACE_PATH>"
+  homepage_url: ""
+  scopes:
+  - name: "requires"
+    dependencies:
+      - id: "Conan::libcurl:7.85.0"
+        dependencies:
+          - id: "Conan::openssl:3.3.1"
+            dependencies:
+              - id: "Conan::zlib:1.2.13"
+          - id: "Conan::zlib:1.2.13"
+      - id: "Conan::openssl:3.3.1"
+        dependencies:
+          - id: "Conan::zlib:1.2.13"
+      - id: "Conan::zlib:1.2.13"
+  - name: "tool_requires"
+    dependencies:
+      - id: "Conan::autoconf:2.71"
+        dependencies:
+          - id: "Conan::m4:1.4.19"
+      - id: "Conan::automake:1.16.5"
+        dependencies:
+          - id: "Conan::autoconf:2.71"
+            dependencies:
+              - id: "Conan::m4:1.4.19"
+          - id: "Conan::m4:1.4.19"
+      - id: "Conan::libtool:2.4.7"
+        dependencies:
+          - id: "Conan::autoconf:2.71"
+            dependencies:
+              - id: "Conan::m4:1.4.19"
+          - id: "Conan::automake:1.16.5"
+            dependencies:
+              - id: "Conan::autoconf:2.71"
+                dependencies:
+                  - id: "Conan::m4:1.4.19"
+              - id: "Conan::m4:1.4.19"
+          - id: "Conan::gnu-config:cci.20210814"
+          - id: "Conan::m4:1.4.19"
+      - id: "Conan::libxslt:1.1.34"
+        dependencies:
+          - id: "Conan::libiconv:1.17"
+          - id: "Conan::libxml2:2.11.6"
+            dependencies:
+              - id: "Conan::libiconv:1.17"
+              - id: "Conan::zlib:1.3.1"
+          - id: "Conan::zlib:1.3.1"
+      - id: "Conan::m4:1.4.19"
+      - id: "Conan::pkgconf:2.1.0"
+        dependencies:
+          - id: "Conan::meson:1.2.2"
+            dependencies:
+              - id: "Conan::ninja:1.11.1"
+          - id: "Conan::ninja:1.11.1"
+packages:
+- id: "Conan::autoconf:2.71"
+  purl: "pkg:conan/autoconf@2.71"
+  declared_licenses:
+    - "GPL-2.0-or-later"
+    - "GPL-3.0-or-later"
+  declared_licenses_processed:
+    spdx_expression: "GPL-2.0-or-later AND GPL-3.0-or-later"
+  description: "Autoconf is an extensible package of M4 macros that produce shell\
+  \ scripts to automatically configure software source code packages"
+  homepage_url: "https://www.gnu.org/software/autoconf/"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://ftpmirror.gnu.org/autoconf/autoconf-2.71.tar.xz"
+    hash:
+      value: "f14c83cfebcc9427f2c3cea7258bd90df972d92eb26752da4ddad81c87a0faa4"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  is_modified: true
+- id: "Conan::automake:1.16.5"
+  purl: "pkg:conan/automake@1.16.5"
+  declared_licenses:
+    - "GPL-2.0-or-later"
+    - "GPL-3.0-or-later"
+  declared_licenses_processed:
+    spdx_expression: "GPL-2.0-or-later AND GPL-3.0-or-later"
+  description: "Automake is a tool for automatically generating Makefile.in files\
+  \ compliant with the GNU Coding Standards."
+  homepage_url: "https://www.gnu.org/software/automake/"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://ftp.gnu.org/gnu/automake/automake-1.16.5.tar.gz"
+    hash:
+      value: "07bd24ad08a64bc17250ce09ec56e921d6343903943e99ccf63bbf0705e34605"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  is_modified: true
+- id: "Conan::gnu-config:cci.20210814"
+  purl: "pkg:conan/gnu-config@cci.20210814"
+  declared_licenses:
+    - "GPL-3.0-or-later"
+    - "autoconf-special-exception"
+  declared_licenses_processed:
+    spdx_expression: "GPL-3.0-or-later"
+    unmapped:
+      - "autoconf-special-exception"
+  description: "The GNU config.guess and config.sub scripts"
+  homepage_url: "https://savannah.gnu.org/projects/config/"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "http://git.savannah.gnu.org/cgit/config.git/snapshot/config-191bcb948f7191c36eefe634336f5fc5c0c4c2be.tar.gz"
+    hash:
+      value: "302e5e7f3c4996976c58efde8b2f28f71d51357e784330eeed738e129300dc33"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  is_modified: true
+- id: "Conan::libcurl:7.85.0"
+  purl: "pkg:conan/libcurl@7.85.0"
+  declared_licenses:
+    - "curl"
+  declared_licenses_processed:
+    spdx_expression: "curl"
+  description: "command line tool and library for transferring data with URLs"
+  homepage_url: "https://curl.se"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://curl.se/download/curl-7.85.0.tar.xz"
+    hash:
+      value: "88b54a6d4b9a48cb4d873c7056dcba997ddd5b7be5a2d537a4acb55c20b04be6"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+- id: "Conan::libiconv:1.17"
+  purl: "pkg:conan/libiconv@1.17"
+  declared_licenses:
+    - "LGPL-2.1-or-later"
+  declared_licenses_processed:
+    spdx_expression: "LGPL-2.1-or-later"
+  description: "Convert text to and from Unicode"
+  homepage_url: "https://www.gnu.org/software/libiconv/"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://ftp.gnu.org/gnu/libiconv/libiconv-1.17.tar.gz"
+    hash:
+      value: "8f74213b56238c85a50a5329f77e06198771e70dd9a739779f4c02f65d971313"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+- id: "Conan::libtool:2.4.7"
+  purl: "pkg:conan/libtool@2.4.7"
+  declared_licenses:
+    - "GPL-2.0-or-later"
+    - "GPL-3.0-or-later"
+  declared_licenses_processed:
+    spdx_expression: "GPL-2.0-or-later AND GPL-3.0-or-later"
+  description: "GNU libtool is a generic library support script. "
+  homepage_url: "https://www.gnu.org/software/libtool/"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://ftp.gnu.org/gnu/libtool/libtool-2.4.7.tar.gz"
+    hash:
+      value: "04e96c2404ea70c590c546eba4202a4e12722c640016c12b9b2f1ce3d481e9a8"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  is_modified: true
+- id: "Conan::libxml2:2.11.6"
+  purl: "pkg:conan/libxml2@2.11.6"
+  declared_licenses:
+    - "MIT"
+  declared_licenses_processed:
+    spdx_expression: "MIT"
+  description: "libxml2 is a software library for parsing XML documents"
+  homepage_url: "https://gitlab.gnome.org/GNOME/libxml2/-/wikis/"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://download.gnome.org/sources/libxml2/2.11/libxml2-2.11.6.tar.xz"
+    hash:
+      value: "c90eee7506764abbe07bb616b82da452529609815aefef423d66ef080eb0c300"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+- id: "Conan::libxslt:1.1.34"
+  purl: "pkg:conan/libxslt@1.1.34"
+  declared_licenses:
+    - "MIT"
+  declared_licenses_processed:
+    spdx_expression: "MIT"
+  description: "libxslt is a software library implementing XSLT processor, based on\
+  \ libxml2"
+  homepage_url: "https://xmlsoft.org"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.34.tar.xz"
+    hash:
+      value: "28c47db33ab4daefa6232f31ccb3c65260c825151ec86ec461355247f3f56824"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  is_modified: true
+- id: "Conan::m4:1.4.19"
+  purl: "pkg:conan/m4@1.4.19"
+  declared_licenses:
+    - "GPL-3.0-only"
+  declared_licenses_processed:
+    spdx_expression: "GPL-3.0-only"
+  description: "GNU M4 is an implementation of the traditional Unix macro processor"
+  homepage_url: "https://www.gnu.org/software/m4/"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz"
+    hash:
+      value: "63aede5c6d33b6d9b13511cd0be2cac046f2e70fd0a07aa9573a04a82783af96"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  is_modified: true
+- id: "Conan::meson:1.2.2"
+  purl: "pkg:conan/meson@1.2.2"
+  declared_licenses:
+    - "Apache-2.0"
+  declared_licenses_processed:
+    spdx_expression: "Apache-2.0"
+  description: "a project to create the best possible next-generation build system"
+  homepage_url: "https://github.com/mesonbuild/meson"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://github.com/mesonbuild/meson/releases/download/1.2.2/meson-1.2.2.tar.gz"
+    hash:
+      value: "4a0f04de331fbc7af3b802a844fc8838f4ccd1ded1e792ba4f8f2faf8c5fe4d6"
+      algorithm: "SHA-256"
+  vcs:
+    type: "Git"
+    url: "https://github.com/mesonbuild/meson.git"
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: "Git"
+    url: "https://github.com/mesonbuild/meson.git"
+    revision: ""
+    path: ""
+- id: "Conan::ninja:1.11.1"
+  purl: "pkg:conan/ninja@1.11.1"
+  declared_licenses:
+    - "Apache-2.0"
+  declared_licenses_processed:
+    spdx_expression: "Apache-2.0"
+  description: "Ninja is a small build system with a focus on speed"
+  homepage_url: "https://github.com/ninja-build/ninja"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://github.com/ninja-build/ninja/archive/v1.11.1.tar.gz"
+    hash:
+      value: "31747ae633213f1eda3842686f83c2aa1412e0f5691d1c14dbbcc67fe7400cea"
+      algorithm: "SHA-256"
+  vcs:
+    type: "Git"
+    url: "https://github.com/ninja-build/ninja.git"
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: "Git"
+    url: "https://github.com/ninja-build/ninja.git"
+    revision: ""
+    path: ""
+- id: "Conan::openssl:3.3.1"
+  purl: "pkg:conan/openssl@3.3.1"
+  declared_licenses:
+    - "Apache-2.0"
+  declared_licenses_processed:
+    spdx_expression: "Apache-2.0"
+  description: "A toolkit for the Transport Layer Security (TLS) and Secure Sockets\
+  \ Layer (SSL) protocols"
+  homepage_url: "https://github.com/openssl/openssl"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://github.com/openssl/openssl/releases/download/openssl-3.3.1/openssl-3.3.1.tar.gz"
+    hash:
+      value: "777cd596284c883375a2a7a11bf5d2786fc5413255efab20c50d6ffe6d020b7e"
+      algorithm: "SHA-256"
+  vcs:
+    type: "Git"
+    url: "https://github.com/openssl/openssl.git"
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: "Git"
+    url: "https://github.com/openssl/openssl.git"
+    revision: ""
+    path: ""
+- id: "Conan::pkgconf:2.1.0"
+  purl: "pkg:conan/pkgconf@2.1.0"
+  declared_licenses:
+    - "ISC"
+  declared_licenses_processed:
+    spdx_expression: "ISC"
+  description: "package compiler and linker metadata toolkit"
+  homepage_url: "https://git.sr.ht/~kaniini/pkgconf"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://distfiles.ariadne.space/pkgconf/pkgconf-2.1.0.tar.xz"
+    hash:
+      value: "266d5861ee51c52bc710293a1d36622ae16d048d71ec56034a02eb9cf9677761"
+      algorithm: "SHA-256"
+  vcs:
+    type: "Git"
+    url: "https://git.sr.ht/~kaniini/pkgconf"
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: "Git"
+    url: "https://git.sr.ht/~kaniini/pkgconf"
+    revision: ""
+    path: ""
+  is_modified: true
+- id: "Conan::zlib:1.2.13"
+  purl: "pkg:conan/zlib@1.2.13"
+  declared_licenses:
+    - "Zlib"
+  declared_licenses_processed:
+    spdx_expression: "Zlib"
+  description: "A Massively Spiffy Yet Delicately Unobtrusive Compression Library\
+  \ (Also Free, Not to Mention Unencumbered by Patents)"
+  homepage_url: "https://zlib.net"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://zlib.net/fossils/zlib-1.2.13.tar.gz"
+    hash:
+      value: "b3a24de97a8fdbc835b9833169501030b8977031bcb54b3b3ac13740f846ab30"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  is_modified: true
+- id: "Conan::zlib:1.3.1"
+  purl: "pkg:conan/zlib@1.3.1"
+  declared_licenses:
+    - "Zlib"
+  declared_licenses_processed:
+    spdx_expression: "Zlib"
+  description: "A Massively Spiffy Yet Delicately Unobtrusive Compression Library\
+  \ (Also Free, Not to Mention Unencumbered by Patents)"
+  homepage_url: "https://zlib.net"
+  binary_artifact:
+    url: ""
+    hash:
+      value: ""
+      algorithm: ""
+  source_artifact:
+    url: "https://zlib.net/fossils/zlib-1.3.1.tar.gz"
+    hash:
+      value: "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23"
+      algorithm: "SHA-256"
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  is_modified: true

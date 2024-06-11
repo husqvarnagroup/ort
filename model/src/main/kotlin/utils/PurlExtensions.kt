@@ -42,6 +42,7 @@ fun Identifier.getPurlType() =
         "carthage" -> PurlType.CARTHAGE
         "composer" -> PurlType.COMPOSER
         "conan" -> PurlType.CONAN
+        "conan2" -> PurlType.CONAN
         "crate" -> PurlType.CARGO
         "go" -> PurlType.GOLANG
         "gem" -> PurlType.GEM
