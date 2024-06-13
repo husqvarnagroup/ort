@@ -1,0 +1,1 @@
+../src/funTest/assets/projects/synthetic/conan-txt/conanfile.txt
